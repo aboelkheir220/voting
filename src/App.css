@@ -1,38 +1,694 @@
-.App {
+body{
+  background: #f3f3f3;
+}
+
+/* navbar */
+.header{
+  background: #0c2b4b;
+}
+.header img{
+  height: 100%;
+  width: 100px;
+  margin-top: 2px;
+}
+.header p{
+  position: absolute;
+  top: 10px;
+  font-size: 18px;
+  right: 150px;
+  color: #a8afb3;
+  font-weight: 600;
+}
+.header h3{
+  position: absolute;
+  top: 35px;
+  color: #ecd822;
+  right: 150px;
+  font-size: 25px;
+}
+.header h1{
+  position: absolute;
+  top: 1px;
+  left: 80px;
+  font-size: 40px;
+  font-family: cursive;
+  color: #3ad8bb;
+  letter-spacing: 10px;
+}
+.item{
+  background: #900619;
+}
+.item ul {
+  display: flex;
+  margin: 20px;
+  list-style: none;
+  margin-right: 120px;
+  padding: 10px;
+}
+.item ul li a{
+  margin-right: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+}
+.item ul li a:hover{
+  background: #c5b228;
+ color: white;
+}
+/* home */
+.home{
+  margin: 80px;
+  margin-right: 350px;
+}
+.home .show h2{
+  margin: 25px;
+  margin-right: 10px;
+}
+.home .vote h2{
+  margin: 30px;
+  margin-right: 10px;
+  }
+.home .result h2{
+  margin: 30px;
+  margin-right: 75px;
+}
+.home button{
+  width: 110px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 0px;
+  background: rgb(153, 8, 8);
+  margin-right: 80px;
+
+}
+.home button:hover{
+  border-radius: 20px;
+  background: #c0a107;
+  color: black;
+  font-weight: bold;
+}
+.home a{
+  color: white;
+  text-decoration: none;
+}
+.home a:hover{
+  color: black;
+  font-weight: bold;
+}
+
+/* main */ 
+.search h1{
+  color: #BE1E2D;
+    margin-bottom: 15px;
+    padding: 15px 0;
+    margin-top: 80px;
+    margin-right: 200px;
+}
+.search h3{
+  margin-right: 140px;
+  width: 700px;
+}
+.search form input{
+  height: 30px;
+    border-radius: 7px;
+    width: 350px;
+    display: block;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+.search form button{
+  color: white;
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 20px;
+    background: #a00f0f;
+    margin: 30px;
+    margin-right: 300px;
+}
+.search form button:hover{
+  background: rgb(34, 145, 34);
+  border-radius: 10px;
+}
+/* important */
+.important{
+  position: absolute;
+  left: 30px;
+  top: 250px;
+  width: 350px;
+}
+.important .heads{
+  margin-right: 30px;
+  width: 350px;
+  font-size: 23px;
+}
+.important ul{
+  margin-top: 20px;
+  list-style: none;
+}
+.important .heads h4{
+  display: inline;
+  margin-left: 100px;
+}
+.important ul li {
+  text-decoration : none;
+  font-size: 20px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: orangered solid 1px;
+
+}
+.important ul li a{
+  text-decoration: none;
+  color: brown;
+}
+/* info */ 
+.info{
+  width: 500px;
+  margin: 100px;
+  font-size: 20px;
+}
+ .info a{
+   text-decoration: none;
+ }
+/* footer */
+.footer{
+  background:  black;
+  color:  white;
+  margin-top: 30px;
+  height: 50px;
+
+}
+.footer p{
+  margin-right: 450px;
+  font-size:  20px;
+  line-height: 2;
+
+}
+/* more page */ 
+.more {
+  width: 800px;
+  margin-right: 100px;
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+}
+.more h2{
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid brown 2px;
+}
+.more p{
+  font-size: 18px;
+  color: black;
+  margin: 40px;
+}
+.more ul li{
+  margin: 20px;
+  color:  #565454;
+}
+/* rule */ 
+.rule{
+  width: 800px;
+  margin-right: 100px;
+  background: white;
+  padding: 20px;
+}
+.rule h2{
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid brown 2px;
+}
+.rule ul li{
+  margin: 30px;
+}
+.rule ul li a{
+  text-decoration: none;
+  color: gray;
+}
+/* agenda */ 
+.agenda{
+  width: 900px;
+  background: white;
+  margin-right: 230px;
+  padding: 20px;
+}
+.agenda .row{
+  display: flex;
+}
+
+.agenda .col {
+  margin: 5px;
+  background: rgb(236, 234, 234);
+  height: 250px;
+}
+.agenda .col .hs {
+  background: rgb(228, 20, 20);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 1;
+}
+.agenda .col .hs h4{
+  margin-bottom: 2px;
+  margin-top: 0px;
+}
+.agenda h4{
+  margin: 20px;
+  font-size: 20px;
+}
+.agenda .col:hover{
+  width: 500px;
+  height: 270px;
+}
+/* events */
+.event {
+  width:1200px;
+  margin-right: 50px;
+  background:  white;
+  padding: 20px;
+}
+.event h2{
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid brown 2px;
+}
+.event .row{
+  display: flex;
+  margin: 50px;
+  margin-top: 70px;
+  margin-right: 70px;
+}
+.event .row .col{
+  width: 33%;
+  height: 300px;
+  margin: 10px;
+}
+.event .row img{
+  width: 100%;
+  height: 250px;
+}
+.event .row .col h4{
+  margin-right: 20px;
+}
+.event .row .col a{
+  text-decoration: none;
+  margin-right: 30px;
+  color:blue;
+  font-size: 20px;
+}
+/* out egypt */
+.egypt{
+  width: 900px;
+  background: white;
+  margin-right: 220px;
+  padding: 20px;
+}
+
+.egypt h2{
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid brown 2px;
+}
+.egypt table{
+  margin-top: 50px;
+  width: 800px;
+}
+/* complaint */
+.complaint{
+  width: 700px;
+  background: white;
+  margin-right: 320px;
+  padding: 30px;
+}
+.complaint h2{
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid brown 2px;
+}
+.complaint svg {
+  color: #1360a8;
+  cursor: pointer;
+}
+.complaint .service{
+  margin: 80px;
+}
+
+/* commission */
+.commission{
+  width: 700px;
+  margin-right: 280px;
+  background: white;
+  padding: 30px;
+}
+.commission h2{
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid brown 2px;
+}
+.commission a{
+  display: block;
+  width: 170px;
+  height: 40px;
+  background: #900619;
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  text-align: center;
+  line-height: 2.5;
+}
+.commission a:hover{
+  background: #BFA111;
+  border-radius: 20px;
+  font-weight: bold;
+  color: black;
+}
+/* define */
+.define{
+  width: 1000px;
+  background: white;
+  margin-right: 150px;
+  padding: 30px;
+  line-height: 2;
+}
+.define h2{
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid brown 2px;
+}
+/* consist */
+.consist{
+  width: 800px;
+  background: white;
+  margin-right: 230px;
+  padding: 30px;
+  line-height: 2;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.consist h2{
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid brown 2px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* doing */
+.doing{
+  width: 800px;
+  background: white;
+  margin-right: 230px;
+  padding: 30px;
+  line-height: 2;
+  text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.doing h2{
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid brown 2px;
+}
+/* desision */
+.desision{
+  width: 800px;
+  background: white;
+  margin-right: 230px;
+  padding: 30px;
+  line-height: 2;
+}
+.desision h2{
+  text-align: center;
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid brown 2px;
+}
+/* follow */
+.follow{
+  width: 800px;
+  background: white;
+  margin-right: 230px;
+  padding: 30px;
+  line-height: 2;
+}
+.follow h2{
+  text-align: center;
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid brown 2px;
+}
+.follow ul li{
+  cursor: pointer;
+}
+/* voting */
+.voting h2{
+  margin: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+.voting .photo{
+  margin-right:20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%
+ }
+ .voting table{
+   margin-right: 400px;
+   text-align: center;
+   font-family: cursive;
+ }
+  .voting .font{
+  font-size: 30px;
+  font-weight:600;
+ }
+ .voting .check{
+  width: 25px;
+  height: 25px;
+}
+.voting .number{
+  background-color: #0fb9aa;
+  font-size: 22px;
+  text-align: center;
+}
+.voting button{
+  width: 110px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  background: rgb(136, 8, 8);
+  margin: 30px;
+  margin-right: 650px;
+}
+.voting a{
   color: white;
+  text-decoration: none;
+}
+ /* thank */
+ .thank {
+   text-align: center;
+   margin: 100px;
+ }
+ .thank h2{
+   font-size: 40px;
+ }
+ .thank h6{
+   font-size: 20px;
+ }
+ .thank button{
+  width: 210px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  background: rgb(136, 8, 8);
+  margin: 30px;
+
+}
+.thank a{
+  color: white;
+  text-decoration: none;
+}
+/* result */
+.results h2{
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+.results img{
+  margin-right: 580px;
+  width: 200px;
+  height: 100px;
+  border-radius: 20%;
+  margin-bottom: 30px;
+}
+.results button{
+  width: 210px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  background: rgb(136, 8, 8);
+  margin: 30px;
+  margin-right: 580px;
+}
+.results a{
+  color: white;
+  text-decoration: none;
+}
+/* error */
+.error{
+  text-align: center;
+  margin-top: 80px;
+}
+.error h2{
+  margin-bottom: 30px;
+}
+.error button{
+  width: 210px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  background: rgb(136, 8, 8);
+  margin: 80px;
+}
+.error a{
+  color: white;
+  text-decoration: none;
+}
+/* media query */
+@media (max-width:789px){
+  /* header */
+  .header h1{
+    position: absolute;
+    top: 1px;
+    left: 50px;
+    font-size: 30px;
+    font-family: cursive;
+    color: #3ad8bb;
+    letter-spacing: 5px;
+  }
+  /* home */
+  .home{
+    margin: 80px;
+    margin-right: 200px;
+  }
+  /* important home */
+  .important{
+    position: relative;
+    right: 30px;
+    top: 0px;
+    width: 350px;
+  }
+  /* nav */
+  .item ul {
+    display: flex;
+    margin: 5px;
+    list-style: none;
+    margin-right: 10px;
+    padding: 5px;
+  }
+  .item ul li a{
+    margin-right: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-weight: 600;
+  }
+  /* footer */
+  .footer{
+    background:  black;
+    color:  white;
+    margin-top: 30px;
+    height: 50px;
+  
+  }
+  .footer p{
+    margin-right: 80px;
+    font-size:  20px;
+    line-height: 2;
+  
+  }
+  /* search */
+.search h3{
+  margin-right: 150px;
+  width: 500px;
+}
+/* voting */
+.voting h2{
+  margin: 50px;
+  text-align: center;
+  font-size: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+ .voting table{
+   margin-right: 75px;
+   text-align: center;
+   font-family: cursive;
+ }
+ .voting button{
+  margin-right: 300px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* results */
+.results img{
+  margin-right: 270px;
+}
+.results button{
+  margin-right: 250px;
+}
+/* commission */
+.commission{
+  width: 500px;
+  margin-right: 80px;
+  background: white;
+  padding: 30px;
+}
+/* agenda */
+.agenda{
+  width: 650px;
+  background: white;
+  margin-right: 12px;
+  padding: 20px;
+}
+/* events */
+.event {
+  width:680px;
+  margin-right: 15px;
+  background:  white;
+  padding: 0px;
+}
+.event .row .col{
+  width: 33%;
+  height: 400px;
+  margin: 10px;
+}
+/* rules */
+.rule{
+  width: 600px;
+  margin-right: 35px;
+  background: white;
+  padding: 20px;
+}
+/* egypt */
+.egypt{
+  width: 650px;
+  background: white;
+  margin-right: 10px;
+}
+.egypt table{
+  width: 500px;
+}
+/* complament */
+.complaint{
+  width: 600px;
+  background: white;
+  margin-right: 27px;
+  padding: 30px;
+}
+/* consist , define */
+.consist , .define , .desision , .doing , .follow , .more{
+  width: 600px;
+  background: white;
+  margin-right: 30px;
+  margin-top: 20px;
+  padding: 30px;
+  line-height: 2;
+  text-align: center;
+}
 }
